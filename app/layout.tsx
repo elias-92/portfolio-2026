@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Elias Martinez | Frontend Developer',
+    default: 'Elias Martinez | Frontend Developer especializado en React y Next.js',
 
     template: '%s | Elias Martinez'
   },
 
   description:
-    'Portfolio de Elias Martinez. Desarrollo frontend moderno con React, Next.js, TypeScript y experiencias enfocadas en interfaces modernas.',
+    'Portfolio de Elias Martinez con proyectos desarrollados en React, Next.js y TypeScript, enfocados en interfaces modernas y soluciones reales.',
 
   keywords: ['Frontend Developer', 'React', 'Next.js', 'TypeScript', 'Portfolio', 'Web Developer'],
 
@@ -30,9 +30,10 @@ export const metadata: Metadata = {
     icon: '/favicon.ico'
   },
   openGraph: {
-    title: 'Elias Martinez | Frontend Developer',
+    title: 'Elias Martinez | Frontend Developer especializado en React y Next.js',
 
-    description: 'Portfolio profesional con proyectos, experiencia y desarrollo web moderno.',
+    description:
+      'Portfolio de Elias Martinez con proyectos desarrollados en React, Next.js y TypeScript, enfocados en interfaces modernas y soluciones reales.',
 
     url: 'https://martinezelias.netlify.app',
 
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.webp',
 
         width: 1200,
 
@@ -56,11 +57,12 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
 
-    title: 'Elias Martinez | Frontend Developer',
+    title: 'Elias Martinez | Frontend Developer especializado en React y Next.js',
 
-    description: 'Portfolio profesional con proyectos y experiencia.',
+    description:
+      'Portfolio de Elias Martinez con proyectos desarrollados en React, Next.js y TypeScript, enfocados en interfaces modernas y soluciones reales.',
 
-    images: ['/og-image.png']
+    images: ['/og-image.webp']
   },
 
   robots: {
