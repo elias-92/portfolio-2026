@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
-
 import { projects } from '@/data/projects'
 
 export default function Projects() {
@@ -72,6 +71,7 @@ export default function Projects() {
 
               <div className="flex gap-4">
                 <a
+                  aria-label='Ver código fuente del proyecto'
                   href={project.github}
                   target="_blank"
                   className="flex items-center gap-2 rounded-2xl border border-white/10 px-5 py-3 transition hover:border-cyan-400 hover:text-cyan-400"
@@ -81,6 +81,7 @@ export default function Projects() {
                 </a>
 
                 <a
+                  aria-label='Ver demo del proyecto'
                   href={project.demo}
                   target="_blank"
                   className="flex items-center gap-2 rounded-2xl bg-cyan-500 px-5 py-3 font-semibold text-black transition hover:scale-105"

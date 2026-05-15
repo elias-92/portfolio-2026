@@ -46,6 +46,7 @@ export default function CertificateModal({ isOpen, onClose, image, title }: Prop
             className="relative w-full max-w-3xl overflow-hidden rounded-4xl border border-white/10 bg-zinc-950"
           >
             <button
+              aria-label="Cerrar Modal"
               onClick={onClose}
               className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-black/50 text-white transition hover:bg-black"
             >

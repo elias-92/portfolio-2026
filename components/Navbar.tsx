@@ -113,6 +113,7 @@ export default function Navbar() {
               href="https://github.com/elias-92"
               target="_blank"
               rel="noreferrer"
+              aria-label="Ver perfil de GitHub"
               className="text-zinc-400 transition hover:text-cyan-400"
             >
               <FaGithub size={20} />
@@ -122,6 +123,7 @@ export default function Navbar() {
               href="https://www.linkedin.com/in/elias--martinez/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Ver perfil de LinkedIn"
               className="text-zinc-400 transition hover:text-cyan-400"
             >
               <FaLinkedin size={20} />
@@ -129,6 +131,7 @@ export default function Navbar() {
             <a
               href="/cv/EliasFrontEnd.pdf"
               download
+              aria-label="Descargar CV"
               className="flex items-center gap-2 rounded-2xl bg-cyan-500 px-6 py-3 font-medium text-black transition hover:scale-105"
             >
               Descargar CV
@@ -138,6 +141,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
             className="text-white lg:hidden"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}

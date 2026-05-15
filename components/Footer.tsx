@@ -1,9 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-
 import { motion } from 'framer-motion'
-
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const links = [
@@ -45,7 +43,7 @@ export default function Footer() {
       <div className="section relative z-10 py-16">
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
           <motion.div
-            className='text-center lg:text-start'
+            className="text-center lg:text-start"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -91,6 +89,7 @@ export default function Footer() {
             className="flex items-center gap-5"
           >
             <a
+              aria-label="Ver perfil de GitHub"
               href="https://github.com/elias-92"
               target="_blank"
               className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-zinc-300 transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
@@ -99,6 +98,7 @@ export default function Footer() {
             </a>
 
             <a
+              aria-label="Ver perfil de LinkedIn"
               href="https://www.linkedin.com/in/elias--martinez/"
               target="_blank"
               className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-zinc-300 transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"

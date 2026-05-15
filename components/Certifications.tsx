@@ -53,6 +53,7 @@ export default function Certifications() {
                 alt={cert.title}
                 width={1200}
                 height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               />
             </div>
@@ -69,6 +70,7 @@ export default function Certifications() {
               <h3 className="mb-6 text-2xl font-bold">{cert.title}</h3>
 
               <button
+                aria-label={`Ver certificado de ${cert.title}`}
                 onClick={() =>
                   setSelectedCertificate({
                     image: cert.img,

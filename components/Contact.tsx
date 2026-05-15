@@ -2,11 +2,8 @@
 
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-
 import { motion } from 'framer-motion'
-
 import { Mail, Send } from 'lucide-react'
-
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Contact() {
@@ -117,9 +114,10 @@ export default function Contact() {
           className="rounded-4xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
         >
           <div className="mb-6">
-            <label className="mb-2 block text-sm text-zinc-400">Nombre</label>
+            <label htmlFor='name' className="mb-2 block text-sm text-zinc-400">Nombre</label>
 
             <input
+              id='name'
               type="text"
               name="name"
               required
@@ -128,9 +126,10 @@ export default function Contact() {
           </div>
 
           <div className="mb-6">
-            <label className="mb-2 block text-sm text-zinc-400">Email</label>
+            <label htmlFor='email' className="mb-2 block text-sm text-zinc-400">Email</label>
 
             <input
+              id='email'
               type="email"
               name="email"
               required
@@ -139,9 +138,10 @@ export default function Contact() {
           </div>
 
           <div className="mb-8">
-            <label className="mb-2 block text-sm text-zinc-400">Mensaje</label>
+            <label htmlFor='message' className="mb-2 block text-sm text-zinc-400">Mensaje</label>
 
             <textarea
+              id='message'
               name="message"
               rows={6}
               required
@@ -150,6 +150,7 @@ export default function Contact() {
           </div>
 
           <button
+            aria-label="Enviar Mensaje"
             type="submit"
             disabled={loading}
             className="flex w-full items-center justify-center gap-2 rounded-2xl bg-cyan-500 px-6 py-4 font-semibold text-black transition hover:scale-[1.02]"
