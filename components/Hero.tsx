@@ -30,14 +30,14 @@ export default function Hero() {
 
           <div className="flex gap-4">
             <Link
-              href="#proyectos"
+              href="#projects"
               className="rounded-2xl bg-cyan-500 px-6 py-4 font-semibold text-black transition hover:scale-105"
             >
               Ver proyectos
             </Link>
 
             <Link
-              href="#contacto"
+              href="#contact"
               className="rounded-2xl border border-white/10 px-6 py-4 font-semibold transition hover:border-cyan-400"
             >
               Contactarme
